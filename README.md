@@ -1,102 +1,125 @@
-<!---
- Licensed to the Apache Software Foundation (ASF) under one or more
- contributor license agreements.  See the NOTICE file distributed with
- this work for additional information regarding copyright ownership.
- The ASF licenses this file to You under the Apache License, Version 2.0
- (the "License"); you may not use this file except in compliance with
- the License.  You may obtain a copy of the License at
+# SonarQube [![Build](https://github.com/SonarSource/sonarqube/actions/workflows/build.yml/badge.svg)](https://github.com/SonarSource/sonarqube/actions/workflows/build.yml) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=sonarqube&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=sonarqube) [![AI Code Assurance](https://next.sonarqube.com/sonarqube/api/project_badges/ai_code_assurance?project=org.sonarsource.sonarqube%3Asonarqube-private&token=sqb_c0e2fa9ac4ef89f9a8403c6ba235e108ceb1dce1)](https://next.sonarqube.com/sonarqube/dashboard?id=sonarqube)
 
-      http://www.apache.org/licenses/LICENSE-2.0
+## Continuous Inspection
 
- Unless required by applicable law or agreed to in writing, software
- distributed under the License is distributed on an "AS IS" BASIS,
- WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- See the License for the specific language governing permissions and
- limitations under the License.
--->
-Apache Maven
-============
+SonarQube provides the capability to not only show the health of an application but also to highlight issues newly introduced. With a Quality Gate in place, you can [achieve Clean Code](https://www.sonarsource.com/solutions/clean-code/) and therefore improve code quality systematically.
 
-[![Apache License, Version 2.0, January 2004](https://img.shields.io/github/license/apache/maven.svg?label=License)][license]
-[![Reproducible Builds](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/jvm-repo-rebuild/reproducible-central/master/content/org/apache/maven/maven/badge.json)](https://github.com/jvm-repo-rebuild/reproducible-central/blob/master/content/org/apache/maven/maven/README.md)
+## Links
 
-- [master](https://github.com/apache/maven) = 4.1.x
-[![Jenkins Build](https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fci-maven.apache.org%2Fjob%2FMaven%2Fjob%2Fmaven-box%2Fjob%2Fmaven%2Fjob%2Fmaster%2F)
-  ][build]
-[![Java CI](https://github.com/apache/maven/actions/workflows/maven.yml/badge.svg?branch=master)][gh-build]
+- [Website](https://www.sonarsource.com/products/sonarqube)
+- [Download](https://www.sonarsource.com/products/sonarqube/downloads)
+- [Documentation](https://docs.sonarsource.com/sonarqube)
+- [Webapp source code](https://github.com/SonarSource/sonarqube-webapp)
+- [X](https://twitter.com/SonarQube)
+- [SonarSource](https://www.sonarsource.com), author of SonarQube
+- [Issue tracking](https://jira.sonarsource.com/browse/SONAR/), read-only. Only SonarSourcers can create tickets.
+- [Responsible Disclosure](https://community.sonarsource.com/t/responsible-vulnerability-disclosure/9317)
+- [Next](https://next.sonarqube.com/sonarqube) instance of the next SonarQube version
 
-- [4.0.x](https://github.com/apache/maven/tree/maven-4.0.x): 
-[![Maven Central](https://img.shields.io/maven-central/v/org.apache.maven/apache-maven.svg?label=Maven%20Central&versionPrefix=4.0)](https://central.sonatype.com/artifact/org.apache.maven/apache-maven)
-[![Jenkins Build](https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fci-maven.apache.org%2Fjob%2FMaven%2Fjob%2Fmaven-box%2Fjob%2Fmaven%2Fjob%2Fmaven-4.0.x%2F)][build-4.0]
-[![Java CI](https://github.com/apache/maven/actions/workflows/maven.yml/badge.svg?branch=maven-4.0.x)][gh-build-4.0]
+## Have Questions or Feedback?
 
-- [3.9.x](https://github.com/apache/maven/tree/maven-3.9.x): 
-[![Maven Central](https://img.shields.io/maven-central/v/org.apache.maven/apache-maven.svg?label=Maven%20Central&versionPrefix=3.)](https://central.sonatype.com/artifact/org.apache.maven/apache-maven)
-[![Jenkins Build](https://img.shields.io/jenkins/build?jobUrl=https%3A%2F%2Fci-maven.apache.org%2Fjob%2FMaven%2Fjob%2Fmaven-box%2Fjob%2Fmaven%2Fjob%2Fmaven-3.9.x%2F)][build-3.9]
-[![Java CI](https://github.com/apache/maven/actions/workflows/maven.yml/badge.svg?branch=maven-3.9.x)][gh-build-3.9]
+For support questions ("How do I?", "I got this error, why?", ...), please first read the [documentation](https://docs.sonarsource.com/sonarqube) and then head to the [SonarSource Community](https://community.sonarsource.com/c/help/sq/10). The answer to your question has likely already been answered! 🤓
 
-Apache Maven is a software project management and comprehension tool. Based on
-the concept of a project object model (POM), Maven can manage a project's
-build, reporting and documentation from a central piece of information.
+Be aware that this forum is a community, so the standard pleasantries ("Hi", "Thanks", ...) are expected. And if you don't get an answer to your thread, you should sit on your hands for at least three days before bumping it. Operators are not standing by. 😄
 
-If you think you have found a bug, please file an issue in the [Maven Issue Tracker](https://github.com/apache/maven/issues).
+## Contributing
 
-Documentation
--------------
+If you would like to see a new feature or report a bug, please create a new thread in our [forum](https://community.sonarsource.com/c/sq/10).
 
-More information can be found on [Apache Maven Homepage][maven-home].
-Questions related to the usage of Maven should be posted on
-the [Maven User List][users-list].
+Please be aware that we are not actively looking for feature contributions. The truth is that it's extremely difficult for someone outside SonarSource to comply with our roadmap and expectations. Therefore, we typically only accept minor cosmetic changes and typo fixes.
+
+With that in mind, if you would like to submit a code contribution, please create a pull request for this repository. Please explain your motives to contribute this change: what problem you are trying to fix, what improvement you are trying to make.
+
+Make sure that you follow our [code style](https://github.com/SonarSource/sonar-developer-toolset#code-style) and all tests are passing (Travis build is executed for each pull request).
+
+Willing to contribute to SonarSource products? We are looking for smart, passionate, and skilled people to help us build world-class code-quality solutions. Have a look at our current [job offers here](https://www.sonarsource.com/company/jobs/)!
+
+## Building
+
+To build sources locally follow these instructions.
+
+### Build and Run Unit Tests
+
+Execute from the project base directory:
+
+    ./gradlew build
+
+The zip distribution file is generated in `sonar-application/build/distributions/`. Unzip it and start the server by executing:
+
+    # on Linux
+    bin/linux-x86-64/sonar.sh start
+    # or on MacOS
+    bin/macosx-universal-64/sonar.sh start
+    # or on Windows
+    bin\windows-x86-64\StartSonar.bat
+
+### Open in IDE
+
+If the project has never been built, then build it as usual (see previous section) or use the quicker command:
+
+    ./gradlew ide
+
+Then open the root file `build.gradle` as a project in IntelliJ or Eclipse.
+
+### Gradle Hints
+
+| ./gradlew command                | Description                               |
+| -------------------------------- | ----------------------------------------- |
+| `dependencies`                   | list dependencies                         |
+| `licenseFormat --rerun-tasks`    | fix source headers by applying HEADER.txt |
+| `wrapper --gradle-version 5.2.1` | upgrade wrapper                           |
+
+## Building with UI changes
+
+The SonarQube UI (or webapp as we call it), is located in another repository: [sonarqube-webapp](https://github.com/SonarSource/sonarqube-webapp).
+
+When building the `sonarqube` repository, the webapp is automatically downloaded from Maven Central as a dependency, it makes it easy for you to contribute backend changes without having to care about the webapp.
+
+But if your contribution also contains UI changes, you must clone the `sonarqube-webapp` repository, do your changes there, build it locally and then build the `sonarqube` repository using the `WEBAPP_BUILD_PATH` environment variable to target your custom build of the UI.
+
+Here is an example of how to do it:
+
+```bash
+cd /path/to/sonarqube-webapp/server/sonar-web
+# do your changes
+
+# install dependencies, only needed the first time
+yarn
+
+# build the webapp
+yarn build
 
 
-Where can I get the latest release?
------------------------------------
-You can download the release source from our [download page][maven-download].
+cd /path/to/sonarqube
 
-Contributing
-------------
+# build the sonarqube repository using the custom build of the webapp
+WEBAPP_BUILD_PATH=/path/to/sonarqube-webapp/server/sonar-web/build/webapp ./gradlew build
+```
 
-If you are interested in the development of Maven, please consult the
-documentation first and afterward you are welcome to join the developers
-mailing list to ask questions or discuss new ideas/features/bugs etc.
+You can also target a specific version of the webapp by updating the `webappVersion` property in the `./gradle.properties` file and then building the `sonarqube` repository normally.
 
-Take a look into the [contribution guidelines](CONTRIBUTING.md).
+## Translations files
 
-License
--------
-This code is under the [Apache License, Version 2.0, January 2004][license].
+Historically our translations were stored in `sonar-core/src/main/resources/org/sonar/l10n/core.properties`, but this file is now deprecated and not updated anymore.
+Default translations (in English) are now defined in the webapp repository, here:
+https://github.com/SonarSource/sonarqube-webapp/blob/master/libs/sq-server-shared/src/l10n/default.ts
 
-See the [`NOTICE`](./NOTICE) file for required notices and attributions.
+The format has changed but you can still have it as a `.properties` file format by running the following command:
 
-Donations
----------
-Do you like Apache Maven? Then [donate back to the ASF](https://www.apache.org/foundation/contributing.html) to support the development.
+```bash
+cd /path/to/sonarqube-webapp/server/sonar-web
 
-Quick Build
--------
-If you want to bootstrap Maven, you'll need:
-- Java 17+
-- Maven 3.6.3 or later
-- Run Maven, specifying a location into which the completed Maven distro should be installed:
-    ```
-    mvn -DdistributionTargetDir="$HOME/app/maven/apache-maven-4.1.x-SNAPSHOT" clean package
-    ```
+# install dependencies, only needed the first time
+yarn
 
+# generate a backward compatible .properties file with all the translation keys
+yarn generate-translation-keys
+```
 
-[home]: https://maven.apache.org/
-[license]: https://www.apache.org/licenses/LICENSE-2.0
-[build]: https://ci-maven.apache.org/job/Maven/job/maven-box/job/maven/job/master/
-[build-4.0]: https://ci-maven.apache.org/job/Maven/job/maven-box/job/maven/job/maven-4.0.x/
-[build-3.9]: https://ci-maven.apache.org/job/Maven/job/maven-box/job/maven/job/maven-3.9.x/
-[gh-build]: https://github.com/apache/maven/actions/workflows/maven.yml?query=branch%3Amaster
-[gh-build-4.0]: https://github.com/apache/maven/actions/workflows/maven.yml?query=branch%3Amaven-4.0.x
-[gh-build-3.9]: https://github.com/apache/maven/actions/workflows/maven.yml?query=branch%3Amaven-3.9.x
-[maven-home]: https://maven.apache.org/
-[maven-download]: https://maven.apache.org/download.cgi
-[users-list]: https://maven.apache.org/mailing-lists.html
-[dev-ml-list]: https://www.mail-archive.com/dev@maven.apache.org/
-[code-style]: http://maven.apache.org/developers/conventions/code.html
-[core-it]: https://maven.apache.org/core-its/core-it-suite/
-[building-maven]: https://maven.apache.org/guides/development/guide-building-maven.html
-[cla]: https://www.apache.org/licenses/#clas
+Note that contributing extensions for translations into other languages still work the same way as before. It's just the source of truth for the default translations that changed.
 
+## License
+
+Copyright 2008-2025 SonarSource Sàrl.
+
+Licensed under the [GNU Lesser General Public License, Version 3.0](https://www.gnu.org/licenses/lgpl.txt)
